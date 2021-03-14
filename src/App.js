@@ -113,7 +113,7 @@ function App() {
               custom
               onChange={handleTicketAmoutChange}
             >
-              <option value="">Qtd. de tickets</option>
+              <option value="">Cant. de tickets</option>
               <option value="5">1</option>
               <option value="10">3</option>
               <option value="20">6</option>
