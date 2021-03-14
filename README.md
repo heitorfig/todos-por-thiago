@@ -1,6 +1,6 @@
-# Todos por Thiago
+# Rifa Solidaria - Todos por Thiago
 
-Todos por Thiago es una iniciativa para ayudar al niño Thiaguito y su mamá.
+Rifa Solidaria - Todos por Thiago es una iniciativa para ayudar al niño Thiaguito y su familia.
 El tiene Fibrosis Quística; una enfermedad genética que afecta fuertemente los pulmones, el páncreas, el hígado y los intestinos.
 
 Esta enfermedad no tiene cura, solo tratamientos avanzados y costosos que permiten que el paciente que la padece tenga una mejor calidad de vida.
@@ -14,6 +14,6 @@ Para ayudar a la familia con los costos de estos tratamientos se ha organizado u
 El dinero debe ser depositado directamente a la cuenta de la señora Sandy (mami de Thiago) y los vouchers de pago enviados al e-mail: todos.por.thiago@gmail.com
 
 Si vives en el extranjero también puedes hacer tu donación a través de este link: https://www.gofundme.com/f/2zjt7-ayudenme-a-seguir-viviendo
-Pueden seguir la historia de Thiago por Facebook: "Ayúdenme a seguir viviendo" o por Instagram: @ayudenme_a_seguirviviendo
+Pueden seguir la historia de Thiago por Facebook: "Ayúdenme a seguir viviendo" o por Instagram: [@ayudenme_a_seguirviviendo](https://www.instagram.com/ayudenme_a_seguirviviendo)
 
 DIVULGUE, DONE, COMPARTA ❤️

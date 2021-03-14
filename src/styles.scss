@@ -1,0 +1,135 @@
+$blue: rgb(42, 106, 190);
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+$input-btn-padding-x: 1.25rem;
+$input-btn-padding-x-sm: 1rem;
+$input-btn-padding-x-lg: 1.5rem;
+
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+}
+
+.progress-bar {
+  background-color: $primary;
+}
+
+.modal {
+  .modal-title {
+    color: $primary;
+    font-family: 'Fascinate', cursive;
+  }
+  .modal-content {
+    font-weight: 300;
+  }
+}
+
+.header {
+  padding: 1rem 0;
+  text-align: center;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  background-color: $primary;
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-family: 'Fascinate', cursive;
+    color: white;
+    // text-transform: uppercase;
+  }
+}
+
+.funding-stats {
+  background-color: #FBFBFA;
+  border-bottom: 1px solid rgb(232, 232, 232);
+
+  &-header {
+    text-align: center;
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      font-weight: 300;
+    }
+  }
+
+  &-details {
+    .stat {
+      margin-bottom: 1.5rem;
+      color: rgb(101, 105, 105);
+      font-size: 0.9rem;
+      font-weight: 300;
+
+      .stat-value {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1em;
+      }
+
+      &.stat-primary {
+        .stat-value {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.block {
+  h2 {
+    color: $primary;
+    font-size: 1.6rem;
+  }
+
+  &.prizes-block {
+    .prizes-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      padding: 0;
+      list-style: none;
+
+      @media (min-width: map-get($grid-breakpoints, "sm")) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+
+      & > li {
+        @extend .btn;
+        @extend .btn-outline-secondary;
+        font-size: 0.9rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  &.buy-tickets-block {
+    padding: 2rem;
+    color: white;
+    font-weight: 300;
+    border-bottom: 1px solid rgb(232, 232, 232);
+    background-color: $primary;
+
+    h2 {
+      color: white;
+    }
+
+    a {
+      color: white;
+    }
+
+    .table {
+      tr {
+        td, th {
+          color: white !important
+        }
+      }
+    }
+  }
+}
