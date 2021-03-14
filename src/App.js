@@ -1,5 +1,7 @@
+import moment from 'moment';
 import { useState, useEffect } from 'react';
 import { Col, Container, ProgressBar, Row, Button, Modal, Image, Form, Table } from 'react-bootstrap';
+import Moment from 'react-moment';
 
 function App() {
   const [show, setShow] = useState(false);
@@ -9,13 +11,6 @@ function App() {
   const handleClose = () => setShow(false);
   const handleConfirm = () => setShow(false);
   const handleShow = () => setShow(true);
-
-  const calcDays = () => {
-    const day = new Date('2021-04-31T00:00:00');
-    const today = new Date();
-    const timePassed = day.getTime() - today.getTime();
-    return Math.floor(timePassed / 1000 / 60 / 60 / 24);
-  };
 
   const loadData = () => {
     fetch('data.json', {
@@ -90,8 +85,10 @@ function App() {
                   <div className="stat-label">personas apoyando</div>
                 </div>
                 <div className="stat">
-                  <div className="stat-value">{calcDays()} días</div>
-                  <div className="stat-label">para el sorteo</div>
+                  <div className="stat-label">El sorteo será</div>
+                  <div className="stat-value">
+                    <Moment locale="es-mx" to="2021-04-30T19:00-05:00">{moment.now()}</Moment>
+                  </div>
                 </div>
               </div>
             </Col>
@@ -132,11 +129,15 @@ function App() {
             </Form.Control>
             {ticketsValue > 0 && (
               <Form.Label className="my-1 mr-2">
-                Entonces, el valor que necesitas trasnferir es de <strong className="ml-2 text-white">S./ {ticketsValue},00</strong>
+                Entonces, el valor que necesitas transferir es de <strong className="ml-2 text-white">S./ {ticketsValue},00</strong>
               </Form.Label>
             )}
           </Form>
-          <hr />
+        </Container>
+      </section>
+
+      <section className="block accounts-block">
+        <Container>
           <p>Para participar de la rifa, haga una transferencia a una de las cuentas abajo y envie el voucher de pago y su nombre para <a href="mailto:todos.por.thiago@gmail.com">todos.por.thiago@gmail.com</a>.</p>
 
           <Table striped bordered hover responsive="sm" size="sm">

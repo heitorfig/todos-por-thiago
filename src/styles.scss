@@ -110,7 +110,7 @@ body {
   }
 
   &.buy-tickets-block {
-    padding: 2rem;
+    padding: 2rem 0;
     color: white;
     font-weight: 300;
     border-bottom: 1px solid rgb(232, 232, 232);
@@ -131,5 +131,11 @@ body {
         }
       }
     }
+  }
+
+  &.accounts-block {
+    padding: 2rem 0;
+    font-weight: 300;
+    border-bottom: 1px solid rgb(232, 232, 232);
   }
 }
