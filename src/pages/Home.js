@@ -63,18 +63,8 @@ function Home() {
             </Col>
           </Row>
           <Row>
-            <Col xs={{ order: 1 }} sm={{ order: 0 }}>
-              <div className="block prizes-block">
-                <h2>Premios</h2>
-                <ul className="prizes-list">
-                  {prizes && prizes.map(prize => {
-                    return (
-                      <li>{prize}</li>
-                    );
-                  })}
-                </ul>
-                <p><small>* Se realizarán sorteos individuales para cada premio.</small></p>
-              </div>
+            <Col xs={{ span: 12, order: 1 }} sm={{ span: 12, order: 0 }} md={{ span: 6 }}>
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/zc0Y1iNKgY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </Col>
             <Col xs={{ order: 0 }} sm={{ order: 1 }}>
               <div className="funding-stats-details mb-5">
@@ -100,6 +90,20 @@ function Home() {
               </div>
             </Col>
           </Row>
+        </Container>
+      </section>
+
+      <section className="block prizes-block">
+        <Container>
+          <h2>Premios</h2>
+          <ul className="prizes-list">
+            {prizes && prizes.map(prize => {
+              return (
+                <li>{prize}</li>
+              );
+            })}
+          </ul>
+          <p><small>* Se realizarán sorteos individuales para cada premio.</small></p>
         </Container>
       </section>
 

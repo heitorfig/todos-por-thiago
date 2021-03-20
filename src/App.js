@@ -5,6 +5,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Winners from './pages/Winners';
 
 function App() {
   return (
@@ -16,7 +17,10 @@ function App() {
         {/* <Route path="/sorteo">
           <Raffle />
         </Route> */}
-        <Route path="/">
+        {/* <Route path="/ganadores">
+          <Winners />
+        </Route> */}
+        <Route exact path="/">
           <Home />
         </Route>
       </Switch>
