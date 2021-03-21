@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Col, Container, ProgressBar, Row, Button, Modal, Image, Form, Table } from 'react-bootstrap';
 import Moment from 'react-moment';
 
@@ -8,10 +8,38 @@ function Home() {
   const [data, setData] = useState([]);
   const [prizes, setPrizes] = useState([]);
   const [ticketsValue, setTicketsValue] = useState(0);
+  const ticketsRef = useRef(null);
 
-  const handleClose = () => setShow(false);
-  const handleConfirm = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const handleClose = () => {
+    setShow(false);
+    // eslint-disable-next-line no-undef
+    gtag('event', 'modal_closed', {
+      'event_category': 'engagement',
+      'event_label': 'Closed Modal',
+      'value': 'not_so_good_person',
+    });
+  };
+  const handleConfirm = () => {
+    setShow(false);
+    setTimeout(() => {
+      scrollToTickets();
+    }, 500);
+    // eslint-disable-next-line no-undef
+    gtag('event', 'modal_closed', {
+      'event_category': 'engagement',
+      'event_label': 'Closed Modal',
+      'value': 'good_person',
+    });
+  };
+  const handleShow = () => {
+    setShow(true);
+    // eslint-disable-next-line no-undef
+    gtag('event', 'modal_open', {
+      'event_category': 'engagement',
+      'event_label': 'Opened Modal'
+    });
+  };
+  const scrollToTickets = () => ticketsRef.current.scrollIntoView();
 
   const loadData = () => {
     fetch('data.json', {
@@ -41,6 +69,12 @@ function Home() {
 
   const handleTicketAmoutChange = (e) => {
     const value = +e.target.value;
+    // eslint-disable-next-line no-undef
+    gtag('event', 'tickets_selected', {
+      'event_category': 'engagement',
+      'event_label': 'Selected Tickets',
+      'value': value,
+    });
     setTicketsValue(value);
   };
 
@@ -107,7 +141,7 @@ function Home() {
         </Container>
       </section>
 
-      <section className="block buy-tickets-block">
+      <section className="block buy-tickets-block" ref={ticketsRef}>
         <Container>
           <h2>Adquirir tickets</h2>
 
