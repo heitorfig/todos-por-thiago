@@ -1,12 +1,52 @@
 [
-    "Cafetera",
-    "Licuadora Oster",
-    "Cocina Eléctrica",
-    "Waflera",
-    "Hervidor de Huevos",
-    "Plancha",
-    "Licuadora Manual",
-    "Colonia L'Bel",
-    "Manicure",
-    "Pedicure"
+    {
+        "id": "cafetera",
+        "name": "Cafetera",
+        "image": ""
+    },
+    {
+        "id": "licuadora",
+        "name": "Licuadora Oster",
+        "image": ""
+    },
+    {
+        "id": "cocina",
+        "name": "Cocina Eléctrica",
+        "image": ""
+    },
+    {
+        "id": "waflera",
+        "name": "Waflera",
+        "image": ""
+    },
+    {
+        "id": "hervidor",
+        "name": "Hervidor de Huevos",
+        "image": "/todos-por-thiago/prizes/hervidor.jpeg"
+    },
+    {
+        "id": "plancha",
+        "name": "Plancha",
+        "image": ""
+    },
+    {
+        "id": "licuadora-manual",
+        "name": "Licuadora Manual",
+        "image": ""
+    },
+    {
+        "id": "colonia",
+        "name": "Colonia L'Bel",
+        "image": ""
+    },
+    {
+        "id": "manicure",
+        "name": "Manicure",
+        "image": ""
+    },
+    {
+        "id": "pedicure",
+        "name": "Pedicure",
+        "image": ""
+    }
 ]
