@@ -81,6 +81,10 @@ body {
 }
 
 .block {
+  padding: 2rem 0;
+  font-weight: 300;
+  border-bottom: 1px solid rgb(232, 232, 232);
+
   h2 {
     color: $primary;
     font-size: 1.6rem;
@@ -110,10 +114,7 @@ body {
   }
 
   &.buy-tickets-block {
-    padding: 2rem 0;
     color: white;
-    font-weight: 300;
-    border-bottom: 1px solid rgb(232, 232, 232);
     background-color: $primary;
 
     h2 {
@@ -133,15 +134,180 @@ body {
     }
   }
 
-  &.accounts-block {
-    padding: 2rem 0;
-    font-weight: 300;
-    border-bottom: 1px solid rgb(232, 232, 232);
-  }
+  &.raffle-block {
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 3rem;
+      font-weight: 300;
+      text-align: center;
+    }
 
-  &.prizes-block {
-    padding: 2rem 0;
-    font-weight: 300;
-    border-bottom: 1px solid rgb(232, 232, 232);
+    .prize-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3rem;
+      width: 100%;
+      height: 70vh;
+      padding: 3rem;
+      text-align: center;
+      background-color: #FBFBFA;
+      border: 1px solid rgb(232, 232, 232);
+
+      .item-image {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+        width: 400px;
+        max-width: 100%;
+        background: rgba(0,0,0,0.2);
+        mix-blend-mode: multiply;
+
+        img {
+          display: block;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .item-name {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .item-winner {
+        color: $primary;
+        font-size: 2.5rem;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+
+      &.has-winner {
+        position: relative;
+        overflow: hidden;
+
+        $particles: 50;
+        $width: 750;
+        $height: 750;
+
+        // Create the explosion...
+        $box-shadow: ();
+        $box-shadow2: ();
+        @for $i from 0 through $particles {
+          $box-shadow: $box-shadow,
+                      random($width)-$width / 2 + px
+                      random($height)-$height / 1.2 + px
+                      hsl(random(360), 100, 50);
+          $box-shadow2: $box-shadow2, 0 0 #fff
+        }
+        @mixin keyframes ($animationName) {
+            @-webkit-keyframes #{$animationName} {
+                @content;
+            }
+
+            @-moz-keyframes #{$animationName} {
+                @content;
+            }
+
+            @-o-keyframes #{$animationName} {
+                @content;
+            }
+
+            @-ms-keyframes #{$animationName} {
+                @content;
+            }
+
+            @keyframes #{$animationName} {
+                @content;
+            }
+        }
+
+        @mixin animation-delay ($settings) {
+            -moz-animation-delay: $settings;
+            -webkit-animation-delay: $settings;
+            -o-animation-delay: $settings;
+            -ms-animation-delay: $settings;
+            animation-delay: $settings;
+        }
+
+        @mixin animation-duration ($settings) {
+            -moz-animation-duration: $settings;
+            -webkit-animation-duration: $settings;
+            -o-animation-duration: $settings;
+            -ms-animation-duration: $settings;
+            animation-duration: $settings;
+        }
+
+        @mixin animation ($settings) {
+            -moz-animation: $settings;
+            -webkit-animation: $settings;
+            -o-animation: $settings;
+            -ms-animation: $settings;
+            animation: $settings;
+        }
+
+        @mixin transform ($settings) {
+            transform: $settings;
+            -moz-transform: $settings;
+            -webkit-transform: $settings;
+            -o-transform: $settings;
+            -ms-transform: $settings;
+        }
+
+        &::before, &::after {
+          position: absolute;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          content: '';
+          box-shadow: $box-shadow2;
+          @include animation((1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards));
+        }
+
+        &::after {
+          @include animation-delay((1.25s, 1.25s, 1.25s));
+          @include animation-duration((1.25s, 1.25s, 6.25s));
+        }
+
+        @include keyframes(bang) {
+          to {
+            box-shadow:$box-shadow;
+          }
+        }
+            
+        @include keyframes(gravity)  {
+          to {
+            @include transform(translateY(200px));
+            opacity: 0;
+          }
+        }
+            
+        @include keyframes(position) {
+          0%, 19.9% {
+            margin-top: 10%;
+            margin-left: 40%;
+          }
+          20%, 39.9% {
+            margin-top: 40%;
+            margin-left: 30%;
+          }
+          40%, 59.9% {  
+            margin-top: 0;
+            margin-left: 0;
+          }
+          60%, 79.9% {  
+            margin-top: -40%;
+            margin-left: -30%;
+          }
+          80%, 99.9% {  
+            margin-top: -10%;
+            margin-left: -40%;
+          }
+        }
+      }
+    }
   }
 }

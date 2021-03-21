@@ -14,13 +14,16 @@ function App() {
         <h1>Todos por Thiago</h1>
       </header>
       <Switch>
-        {/* <Route path="/sorteo">
+        {/* <Route exact path="/sorteo">
           <Raffle />
         </Route> */}
         {/* <Route path="/ganadores">
           <Winners />
         </Route> */}
-        <Route path="/">
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/todos-por-thiago">
           <Home />
         </Route>
       </Switch>

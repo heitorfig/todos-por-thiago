@@ -133,7 +133,7 @@ function Home() {
           <ul className="prizes-list">
             {prizes && prizes.map(prize => {
               return (
-                <li>{prize}</li>
+                <li key={prize.id}>{prize.name}</li>
               );
             })}
           </ul>

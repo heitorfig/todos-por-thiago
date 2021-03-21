@@ -1,5 +1,7 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 
 function Raffle() {
   const [supporters, setSupporters] = useState([]);
@@ -88,7 +90,7 @@ function Raffle() {
       _winners[prize] = ticket
       setWinners(_winners);
       stopLoading(prize);
-    }, 10000);
+    }, 6000);
   };
 
   return (
@@ -96,24 +98,31 @@ function Raffle() {
       <section className="block raffle-block">
         <Container>
           <h2>Sorteos</h2>
-
           <Row>
             {prizes && prizes.map(prize => {
               return (
-                <Col key={prize}>
-                  {prize}
-                  {!loading[prize] ? (
-                    <>
-                      {winners[prize] && (
-                        <div>
-                          Ganador: {winners[prize]}
-                        </div>
-                      )}
-                      {!winners[prize] && <button onClick={() => raffle(prize)}>Sortear</button>}
-                    </>
-                  ) : (
-                    <div>Sorteando...</div>
-                  )}
+                <Col key={prize.id} xs="12">
+                  <div className={'prize-item ' + (!loading[prize.id] && winners[prize.id] ? 'has-winner' : '')}>
+                    <div className="item-image">
+                      <img src={prize.image} alt={prize.name} />
+                    </div>
+                    <div className="item-name">{prize.name}</div>
+                    {!loading[prize.id] ? (
+                      <>
+                        {winners[prize.id] && (
+                          <div className="item-winner">
+                            Ganador: <strong>{winners[prize.id]}</strong>
+                          </div>
+                        )}
+                        {!winners[prize.id] && <Button size="lg" onClick={() => raffle(prize.id)}>Sortear</Button>}
+                      </>
+                    ) : (
+                      <Button size="lg" disabled>
+                        <FontAwesomeIcon icon={faSpinner} spin />
+                        Sorteando...
+                      </Button>
+                    )}
+                  </div>
                 </Col>
               );
             })}
