@@ -3,7 +3,7 @@ import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useState } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 
-function Raffle() {
+function Raffle(props) {
   const [supporters, setSupporters] = useState([]);
   const [tickets, setTickets] = useState([]);
   const [prizes, setPrizes] = useState([]);
@@ -36,9 +36,23 @@ function Raffle() {
     });
   };
 
+  const loadWinners = () => {
+    fetch('winners.json', {
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      return response.json();
+    }).then(json => {
+      setWinners(json);
+    });
+  };
+
   useEffect(() => {
     loadSupporters();
     loadPrizes();
+    loadWinners();
   }, []);
 
   useEffect(() => {
@@ -82,14 +96,14 @@ function Raffle() {
     setLoading(_loading);
   };
 
-  const raffle = (prize) => {
-    startLoading(prize);
+  const raffle = (prizeId) => {
+    startLoading(prizeId);
     setTimeout(() => {
       const _winners = {...winners};
       const ticket = randomTicket();
-      _winners[prize] = ticket
+      _winners[prizeId] = ticket
       setWinners(_winners);
-      stopLoading(prize);
+      stopLoading(prizeId);
     }, 6000);
   };
 
@@ -114,7 +128,7 @@ function Raffle() {
                             Ganador: <strong>{winners[prize.id]}</strong>
                           </div>
                         )}
-                        {!winners[prize.id] && <Button size="lg" onClick={() => raffle(prize.id)}>Sortear</Button>}
+                        {(!winners[prize.id] && props.allowRaffle) && <Button size="lg" onClick={() => raffle(prize.id)}>Sortear</Button>}
                       </>
                     ) : (
                       <Button size="lg" disabled>
