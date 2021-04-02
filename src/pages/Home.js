@@ -13,7 +13,7 @@ function Home() {
   const handleClose = () => {
     setShow(false);
     // eslint-disable-next-line no-undef
-    gtag('event', 'modal_closed', {
+    gtag('event', 'modal_closed_no', {
       'event_category': 'engagement',
       'event_label': 'Closed Modal',
       'value': 'not_so_good_person',
@@ -25,7 +25,7 @@ function Home() {
       scrollToTickets();
     }, 500);
     // eslint-disable-next-line no-undef
-    gtag('event', 'modal_closed', {
+    gtag('event', 'modal_closed_yes', {
       'event_category': 'engagement',
       'event_label': 'Closed Modal',
       'value': 'good_person',
@@ -98,7 +98,7 @@ function Home() {
           </Row>
           <Row>
             <Col xs={{ span: 12, order: 1 }} sm={{ span: 12, order: 0 }} md={{ span: 6 }}>
-              <iframe width="100%" height="315" src="https://www.youtube.com/embed/zc0Y1iNKgY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="100%" height="330" src="https://www.youtube.com/embed/zc0Y1iNKgY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </Col>
             <Col xs={{ order: 0 }} sm={{ order: 1 }}>
               <div className="funding-stats-details mb-5">
@@ -113,13 +113,16 @@ function Home() {
                 </div>
                 <div className="stat">
                   <div className="stat-value">{data.supporters}</div>
-                  <div className="stat-label">personas apoyando</div>
+                  <div className="stat-label">
+                    <a href="https://docs.google.com/spreadsheets/d/1fKNWKHsDxb1zIAg13pdKzBFjfuy2W0Yi1aHju3fo9mM/edit?usp=sharing" target="_blank" rel="noreferrer" className="stat-link">personas apoyando</a>
+                  </div>
                 </div>
                 <div className="stat">
                   <div className="stat-label">El sorteo será</div>
                   <div className="stat-value">
                     <Moment locale="es-mx" to="2021-04-30T19:00-05:00">{moment.now()}</Moment>
                   </div>
+                  <div className="stat-label"><small>30 de abril de 2021 - 19:00 (Horário de Peru)</small></div>
                 </div>
               </div>
             </Col>
