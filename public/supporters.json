@@ -122,5 +122,13 @@
     {
         "name": "Alexandra Davalos",
         "tickets": 3
+    },
+    {
+        "name": "Claudia Lázaro Rios",
+        "tickets": 3
+    },
+    {
+        "name": "Heitor Correa Figueiredo",
+        "tickets": 42
     }
 ]
