@@ -5,10 +5,15 @@ import Moment from 'react-moment';
 
 function Home() {
   const [show, setShow] = useState(false);
+  const [showImportant, setShowImportant] = useState(true);
   const [data, setData] = useState([]);
   const [prizes, setPrizes] = useState([]);
   const [ticketsValue, setTicketsValue] = useState(0);
   const ticketsRef = useRef(null);
+
+  const handleImportantClose = () => {
+    setShowImportant(false);
+  };
 
   const handleClose = () => {
     setShow(false);
@@ -120,9 +125,9 @@ function Home() {
                 <div className="stat">
                   <div className="stat-label">El sorteo será</div>
                   <div className="stat-value">
-                    <Moment locale="es-mx" to="2021-04-30T19:00-05:00">{moment.now()}</Moment>
+                    <Moment locale="es-mx" to="2021-05-07T19:00-05:00">{moment.now()}</Moment>
                   </div>
-                  <div className="stat-label"><small>30 de abril de 2021 - 19:00 (Horário de Peru)</small></div>
+                  <div className="stat-label"><small>07 de mayo de 2021 - 19:00 (Horário de Peru)</small></div>
                 </div>
               </div>
             </Col>
@@ -211,6 +216,16 @@ function Home() {
           </Table>
         </Container>
       </section>
+
+      <Modal show={showImportant} onHide={handleImportantClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Aviso Importante</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <p>Comunicamos a las personas que están participando en el sorteo y ayudando a Thiaguito, que lamentablemente por razones personales de la familia de Thiago, el sorteo que ocurriría el 30 de abril tendrá que ser pospuesto hasta el 7 de mayo.</p>
+          <p>Agradecemos y contamos con la comprensión de todos y por favor estén orando por la familia de la Sra. Sandy y Thiaguito.</p>
+        </Modal.Body>
+      </Modal>
 
       <Modal show={show} onHide={handleClose} centered size="lg">
         <Modal.Header closeButton>

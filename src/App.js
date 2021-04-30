@@ -15,8 +15,8 @@ function App() {
       <Switch>
         {/* <Route exact path="/sorteo">
           <Raffle allowRaffle />
-        </Route>
-        <Route exact path="/ganadores">
+        </Route> */}
+        {/* <Route exact path="/ganadores">
           <Raffle />
         </Route> */}
         <Route exact path="/">

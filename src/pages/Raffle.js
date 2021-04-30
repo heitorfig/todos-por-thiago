@@ -111,7 +111,7 @@ function Raffle(props) {
     <>
       <section className="block raffle-block">
         <Container>
-          <h2>Sorteos</h2>
+          <h2>{props.allowRaffle ? 'Sorteos' : 'Ganadores'}</h2>
           <Row>
             {prizes && prizes.map(prize => {
               return (
