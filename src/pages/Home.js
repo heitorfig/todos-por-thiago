@@ -239,7 +239,7 @@ function Home() {
           <p><Image src="https://scontent.fbau3-1.fna.fbcdn.net/v/t1.0-9/160242355_10160841175151258_7816022352069995779_o.jpg?_nc_cat=102&ccb=1-3&_nc_sid=730e14&_nc_ohc=FRSNL9CWTHgAX8NI5ei&_nc_ht=scontent.fbau3-1.fna&oh=32f5a69500401ae76d58ef1ffdcfa1da&oe=606FAEBB" fluid /></p>
           <p>El dinero debe ser depositado directamente a la cuenta de la señora Sandy (mami de Thiago) y los vouchers de pago enviados al e-mail: <a href="mailto:todos.por.thiago@gmail.com">todos.por.thiago@gmail.com</a></p>
           <p>Si vives en el extranjero también puedes hacer tu donación a través de este link: <a href="https://www.gofundme.com/f/2zjt7-ayudenme-a-seguir-viviendo" target="_blank" rel="noreferrer">GoFundMe - Ayudenme a Seguir Viviendo</a></p>
-          <p>Pueden seguir la historia de Thiago por Facebook: "Ayúdenme a seguir viviendo" o por Instagram: <a href="https://instagram.com/ayudenme_a_seguirviviendo" target="_blank" rel="noreferrer">@ayudenme_a_seguirviviendo</a></p>
+          <p>Pueden seguir la historia de Thiago por Facebook: "Ayúdenme a seguir viviendo" o por Instagram: <a href="https://instagram.com/hola_mellamothiago" target="_blank" rel="noreferrer">@hola_mellamothiago</a></p>
           <p>DIVULGUE, DONE, COMPARTA ❤️</p>
         </Modal.Body>
         <Modal.Footer>
