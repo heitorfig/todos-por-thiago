@@ -2,22 +2,22 @@
     {
         "id": "cafetera",
         "name": "Cafetera",
-        "image": ""
+        "image": "/todos-por-thiago/prizes/cafetera.jpeg"
     },
     {
         "id": "licuadora",
         "name": "Licuadora Oster",
-        "image": ""
+        "image": "/todos-por-thiago/prizes/licuadora.jpeg"
     },
     {
         "id": "cocina",
         "name": "Cocina Eléctrica",
-        "image": ""
+        "image": "/todos-por-thiago/prizes/cocina.jpeg"
     },
     {
         "id": "waflera",
         "name": "Waflera",
-        "image": ""
+        "image": "/todos-por-thiago/prizes/waflera.jpeg"
     },
     {
         "id": "hervidor",
@@ -27,26 +27,26 @@
     {
         "id": "plancha",
         "name": "Plancha",
-        "image": ""
+        "image": "/todos-por-thiago/prizes/plancha.jpeg"
     },
     {
         "id": "licuadora-manual",
         "name": "Licuadora Manual",
-        "image": ""
+        "image": "/todos-por-thiago/prizes/licuadora-manual.jpeg"
     },
     {
         "id": "colonia",
         "name": "Colonia L'Bel",
-        "image": ""
+        "image": "/todos-por-thiago/prizes/colonia.jpeg"
     },
     {
         "id": "manicure",
         "name": "Manicure",
-        "image": ""
+        "image": "/todos-por-thiago/prizes/manicure.png"
     },
     {
         "id": "pedicure",
         "name": "Pedicure",
-        "image": ""
+        "image": "/todos-por-thiago/prizes/pedicure.png"
     }
 ]
