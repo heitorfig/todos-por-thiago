@@ -122,12 +122,18 @@ function Home() {
                     <a href="https://docs.google.com/spreadsheets/d/1fKNWKHsDxb1zIAg13pdKzBFjfuy2W0Yi1aHju3fo9mM/edit?usp=sharing" target="_blank" rel="noreferrer" className="stat-link">personas apoyando</a>
                   </div>
                 </div>
-                <div className="stat">
+                {/* <div className="stat">
                   <div className="stat-label">El sorteo será</div>
                   <div className="stat-value">
                     <Moment locale="es-mx" to="2021-05-07T19:00-05:00">{moment.now()}</Moment>
                   </div>
                   <div className="stat-label"><small>07 de mayo de 2021 - 19:00 (Horário de Peru)</small></div>
+                </div> */}
+                <div className="stat">
+                  <div className="stat-value">Sorteo en vivo</div>
+                  <div className="stat-label">
+                    ahora en <a href="https://instagram.com/anapaulach22" target="_blank" rel="noreferrer" className="stat-link">@anapaulach22</a> o <a href="https://instagram.com/hola_mellamothiago" target="_blank" rel="noreferrer" className="stat-link">@hola_mellamothiago</a>
+                  </div>
                 </div>
               </div>
             </Col>
