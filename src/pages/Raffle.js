@@ -128,10 +128,10 @@ function Raffle(props) {
                             Ganador: <strong>{winners[prize.id]}</strong>
                           </div>
                         )}
-                        {(!winners[prize.id] && props.allowRaffle) && <Button size="lg" onClick={() => raffle(prize.id)}>Sortear</Button>}
+                        {(!winners[prize.id] && props.allowRaffle) && <Button size="lg" className="item-button" onClick={() => raffle(prize.id)}>Sortear</Button>}
                       </>
                     ) : (
-                      <Button size="lg" disabled>
+                      <Button size="lg" className="item-button" disabled>
                         <FontAwesomeIcon icon={faSpinner} spin />
                         Sorteando...
                       </Button>

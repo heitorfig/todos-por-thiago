@@ -174,15 +174,20 @@ body {
       }
 
       .item-name {
-        font-size: 1.5rem;
+        font-size: 2.4rem;
+        font-weight: bold;
         margin-bottom: 1rem;
       }
 
       .item-winner {
         color: $primary;
-        font-size: 2.5rem;
+        font-size: 3.2rem;
         font-weight: 300;
         text-transform: uppercase;
+      }
+
+      .item-button {
+        font-size: 1.8em;
       }
 
       &.has-winner {
@@ -259,8 +264,8 @@ body {
 
         &::before, &::after {
           position: absolute;
-          width: 5px;
-          height: 5px;
+          width: 10px;
+          height: 10px;
           border-radius: 50%;
           content: '';
           box-shadow: $box-shadow2;
