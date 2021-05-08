@@ -155,7 +155,7 @@ function Home() {
         </Container>
       </section>
 
-      <section className="block buy-tickets-block" ref={ticketsRef}>
+      {/* <section className="block buy-tickets-block" ref={ticketsRef}>
         <Container>
           <h2>Adquirir tickets</h2>
 
@@ -193,11 +193,12 @@ function Home() {
             )}
           </Form>
         </Container>
-      </section>
+      </section> */}
 
       <section className="block accounts-block">
         <Container>
-          <p>Para participar de la rifa, haga una transferencia a una de las cuentas abajo y envie el voucher de pago y su nombre para <a href="mailto:todos.por.thiago@gmail.com">todos.por.thiago@gmail.com</a>.</p>
+          <p>Para ayudar a la Sra. Sandy, haga una transferencia a una de las cuentas abajo.</p>
+          {/* <p>Para participar de la rifa, haga una transferencia a una de las cuentas abajo y envie el voucher de pago y su nombre para <a href="mailto:todos.por.thiago@gmail.com">todos.por.thiago@gmail.com</a>.</p> */}
 
           <Table striped bordered hover responsive="sm" size="sm">
             <thead>
