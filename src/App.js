@@ -16,7 +16,7 @@ function App() {
         {/* <Route exact path="/sorteo">
           <Raffle allowRaffle />
         </Route> */}
-        <Route exact path="/ganadores">
+        <Route path="/todos-por-thiago/ganadores">
           <Raffle />
         </Route>
         <Route exact path="/">
