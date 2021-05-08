@@ -223,7 +223,7 @@ function Home() {
         </Container>
       </section>
 
-      <Modal show={showImportant} onHide={handleImportantClose} centered>
+      {/* <Modal show={showImportant} onHide={handleImportantClose} centered>
         <Modal.Header closeButton>
           <Modal.Title>Aviso Importante</Modal.Title>
         </Modal.Header>
@@ -231,7 +231,7 @@ function Home() {
           <p>Comunicamos a las personas que están participando en el sorteo y ayudando a Thiaguito, que lamentablemente por razones personales de la familia de Thiago, el sorteo que ocurriría el 30 de abril tendrá que ser pospuesto hasta el 7 de mayo.</p>
           <p>Agradecemos y contamos con la comprensión de todos y por favor estén orando por la familia de la Sra. Sandy y Thiaguito.</p>
         </Modal.Body>
-      </Modal>
+      </Modal> */}
 
       <Modal show={show} onHide={handleClose} centered size="lg">
         <Modal.Header closeButton>
