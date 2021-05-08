@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/todos-por-thiago/static/css/main.bb0dceb6.chunk.css",
-    "main.js": "/todos-por-thiago/static/js/main.c0f029f9.chunk.js",
-    "main.js.map": "/todos-por-thiago/static/js/main.c0f029f9.chunk.js.map",
+    "main.css": "/todos-por-thiago/static/css/main.32fc06ea.chunk.css",
+    "main.js": "/todos-por-thiago/static/js/main.231bb82d.chunk.js",
+    "main.js.map": "/todos-por-thiago/static/js/main.231bb82d.chunk.js.map",
     "runtime-main.js": "/todos-por-thiago/static/js/runtime-main.755818bf.js",
     "runtime-main.js.map": "/todos-por-thiago/static/js/runtime-main.755818bf.js.map",
     "static/js/2.47a820b2.chunk.js": "/todos-por-thiago/static/js/2.47a820b2.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.5cf280d0.chunk.js": "/todos-por-thiago/static/js/3.5cf280d0.chunk.js",
     "static/js/3.5cf280d0.chunk.js.map": "/todos-por-thiago/static/js/3.5cf280d0.chunk.js.map",
     "index.html": "/todos-por-thiago/index.html",
-    "static/css/main.bb0dceb6.chunk.css.map": "/todos-por-thiago/static/css/main.bb0dceb6.chunk.css.map",
+    "static/css/main.32fc06ea.chunk.css.map": "/todos-por-thiago/static/css/main.32fc06ea.chunk.css.map",
     "static/js/2.47a820b2.chunk.js.LICENSE.txt": "/todos-por-thiago/static/js/2.47a820b2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.755818bf.js",
     "static/js/2.47a820b2.chunk.js",
-    "static/css/main.bb0dceb6.chunk.css",
-    "static/js/main.c0f029f9.chunk.js"
+    "static/css/main.32fc06ea.chunk.css",
+    "static/js/main.231bb82d.chunk.js"
   ]
 }
