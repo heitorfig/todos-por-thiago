@@ -132,7 +132,7 @@ function Home() {
                 <div className="stat">
                   <div className="stat-value">Sorteo finalizado</div>
                   <div className="stat-label">
-                    <a href="/ganadores" className="stat-link">Lista de ganadores</a>
+                    <a href="ganadores" className="stat-link">Lista de ganadores</a>
                   </div>
                 </div>
               </div>
