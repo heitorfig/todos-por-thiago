@@ -130,9 +130,9 @@ function Home() {
                   <div className="stat-label"><small>07 de mayo de 2021 - 19:00 (Horário de Peru)</small></div>
                 </div> */}
                 <div className="stat">
-                  <div className="stat-value">Sorteo en vivo</div>
+                  <div className="stat-value">Sorteo finalizado</div>
                   <div className="stat-label">
-                    ahora en <a href="https://instagram.com/anapaulach22" target="_blank" rel="noreferrer" className="stat-link">@anapaulach22</a> o <a href="https://instagram.com/hola_mellamothiago" target="_blank" rel="noreferrer" className="stat-link">@hola_mellamothiago</a>
+                    <a href="/ganadores" className="stat-link">Lista de ganadores</a>
                   </div>
                 </div>
               </div>

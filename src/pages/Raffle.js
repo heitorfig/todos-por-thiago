@@ -143,9 +143,6 @@ function Raffle(props) {
           </Row>
         </Container>
       </section>
-      <div className="raffle-results">
-        {JSON.stringify(winners)}
-      </div>
     </>
   );
 }
