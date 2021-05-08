@@ -131,9 +131,9 @@ function Home() {
                 </div> */}
                 <div className="stat">
                   <div className="stat-value">Sorteo finalizado</div>
-                  <div className="stat-label">
+                  {/* <div className="stat-label">
                     <a href="https://heitorfig.github.io/todos-por-thiago/ganadores" className="stat-link">Lista de ganadores</a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </Col>
